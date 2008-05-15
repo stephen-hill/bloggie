@@ -1,6 +1,6 @@
 The details of the tables in the database.
 
-=SystemPages=
+= SystemPages =
 
 || Field Name || Data Type || Nullable || Default Value || Index ||
 || PA_ID || Int || False || Identity(1,1) || ||
@@ -9,4 +9,12 @@ The details of the tables in the database.
 || PA_Name || Varchar(256) || False || || Primay Key Clustered ||
 || PA_Text || Text || True || || ||
 
-=System Users=
+= SystemUsers =
+
+|| Field Name || Data Type || Nullable || Default Value || Index ||
+|| US_ID || Int || False || Identity(1,1) || ||
+|| US_Created || Datetime || False || Getdate() || ||
+|| US_Updated || Datetime || True || || ||
+|| US_Username || Varchar(256) || False || || Primay Key Clustered ||
+|| US_Name || Varchar(256) || True || ||  ||
+|| US_Password || Text || True || || ||
