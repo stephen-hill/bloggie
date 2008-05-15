@@ -1,9 +1,18 @@
 The details of the tables in the database. Please note that table names will not contain spaces.
 
+= System Activity =
+
+|| Field Name || Data Type || Nullable || Default Value || Index ||
+|| AC_ID || Int || False || Identity(1,1) || Unique Non Clustered ||
+|| AC_Date || Datetime || False || Date Only || Indexed Clustered ||
+|| AC_Datetime || Datetime || False || Getdate() || ||
+|| AC_Username || Varchar(256) || False || || Indexed ||
+|| AC_Text || Text || False ||  ||  ||
+
 = System Pages =
 
 || Field Name || Data Type || Nullable || Default Value || Index ||
-|| PA_ID || Int || False || Identity(1,1) || Unique ||
+|| PA_ID || Int || False || Identity(1,1) || Unique Non Clustered ||
 || PA_Created || Datetime || False || Getdate() || ||
 || PA_Updated || Datetime || True || || ||
 || PA_Name || Varchar(256) || False || || Primay Key Clustered ||
@@ -12,18 +21,18 @@ The details of the tables in the database. Please note that table names will not
 = System Tags =
 
 || Field Name || Data Type || Nullable || Default Value || Index ||
-|| TA_ID || Int || False || Identity(1,1) || Unique ||
+|| TA_ID || Int || False || Identity(1,1) || Unique Non Clustered ||
 || TA_Created || Datetime || False || Getdate() || ||
 || TA_Updated || Datetime || True || || ||
 || TA_Object || Int || False || || Indexed ||
 || TA_Source || Varchar(128) || False || || Indexed ||
 || TA_Namespace || Varchar(128 || True ||  || Indexed ||
-|| TA_Name || Varchar(128) || False ||  || Indexed ||
+|| TA_Name || Varchar(128) || False ||  || Indexed Clustered ||
 
 = System Users =
 
 || Field Name || Data Type || Nullable || Default Value || Index ||
-|| US_ID || Int || False || Identity(1,1) || Unique ||
+|| US_ID || Int || False || Identity(1,1) || Unique Non Clustered ||
 || US_Created || Datetime || False || Getdate() || ||
 || US_Updated || Datetime || True || || ||
 || US_Username || Varchar(256) || False || || Primay Key Clustered ||
