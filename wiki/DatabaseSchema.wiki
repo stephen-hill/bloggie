@@ -1,3 +1,4 @@
+#labels Featured
 The details of the tables in the database. Please note that table names will not contain spaces.
 
 = System Activity =
