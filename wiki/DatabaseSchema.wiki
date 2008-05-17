@@ -13,7 +13,7 @@ The details of the tables in the database. Please note that table names will not
 = System Audit =
 
 || Field Name || Data Type || Nullable || Default Value || Index ||
-|| AU_ID || Int || False || Identity(1,1) ||  ||
+|| AU_ID || Int || False ||  ||  ||
 || AU_Datetime || Datetime || False || Getdate() || ||
 || AU_Username || Varchar(256) || False || ||  ||
 || AU_Action || Varchar(128) || False || ||  ||
@@ -31,10 +31,9 @@ The details of the tables in the database. Please note that table names will not
 = System Tags =
 
 || Field Name || Data Type || Nullable || Default Value || Index ||
-|| TA_ID || Int || False || Identity(1,1) || Unique Non Clustered ||
+|| TA_ID || Int || False || Identity(1,1) || Non Clustered ||
 || TA_Created || Datetime || False || Getdate() || ||
 || TA_Updated || Datetime || True || || ||
-|| TA_Object || Int || False || || Indexed ||
 || TA_Source || Varchar(128) || False || || Indexed ||
 || TA_Namespace || Varchar(128 || True ||  || Indexed ||
 || TA_Name || Varchar(128) || False ||  || Indexed Clustered ||
