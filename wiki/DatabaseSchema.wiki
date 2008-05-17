@@ -10,6 +10,15 @@ The details of the tables in the database. Please note that table names will not
 || AC_Username || Varchar(256) || False || || Indexed ||
 || AC_Text || Text || False ||  ||  ||
 
+= System Audit =
+
+|| Field Name || Data Type || Nullable || Default Value || Index ||
+|| AU_ID || Int || False || Identity(1,1) ||  ||
+|| AU_Datetime || Datetime || False || Getdate() || ||
+|| AU_Username || Varchar(256) || False || ||  ||
+|| AU_Action || Varchar(128) || False || ||  ||
+|| AU_Source || Varchar(128) || False || ||  ||
+
 = System Pages =
 
 || Field Name || Data Type || Nullable || Default Value || Index ||
