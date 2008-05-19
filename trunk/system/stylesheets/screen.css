@@ -1,0 +1,49 @@
+/****** Base Elements ******/
+
+html {
+	background-color: #333A40;
+	font-family: "trebuchet MS",sans-serif;
+	font-size: 1em;
+	text-align: justify;
+	letter-spacing: 0.2pt;
+	word-spacing: -1pt;
+	line-height: 1.6
+}
+
+a {
+	color: #9CB4C1
+}
+
+a:hover {
+	color: #fff
+}
+
+a img {
+	border: none
+}
+
+/****** Title or Header ******/
+
+#title {
+	background-color: #242B31;
+	padding: 0.5em;
+	text-align: right
+}
+
+#title img {
+	float: left
+}
+
+#title h1 {
+	display: none
+}
+
+#title ul {
+	display: inline;
+	list-style: none
+}
+
+#title ul li {
+	display: inline;
+	padding-left: 1em
+}
