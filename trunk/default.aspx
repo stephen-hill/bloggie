@@ -54,103 +54,118 @@
 		</ul>
 	</div>
 	
-	<div id="submenu">
-		<h2>
-			System
-		</h2>
-		<ul>
-			<li>
-				<a href="">
-					Pages
-				</a>
-			</li>
-			<li>
-				<a href="">
-					Users
-				</a>
-			</li>
-			<li>
-				<a href="">
-					Settings
-				</a>
-			</li>
-			<li>
-				<a href="" class="active">
-					Extentions
-				</a>
-			</li>
-			<li>
-				<a href="">
-					Reports
-				</a>
-			</li>
-			<li>
-				<a href="">
-					Activity
-				</a>
-			</li>
-			<li>
-				<a href="">
-					Audit
-				</a>
-			</li>
-		</ul>
-	</div>
+	<div id="workarea">
 	
-	<div id="content">
-		<h3>
-			Extentions
-		</h3>
+		<div id="submenu">
+			<h2>
+				System
+			</h2>
+			<ul>
+				<li>
+					<a href="">
+						Pages
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Users
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Settings
+					</a>
+				</li>
+				<li>
+					<a href="" class="active">
+						Extentions
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Reports
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Activity
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Audit
+					</a>
+				</li>
+			</ul>
+		</div>
 		
-		<p>
-			This page allows you to install and manage extention on the system.
-		</p>
+		<div id="content">
+			<h3>
+				Extentions
+			</h3>
+			
+			<p>
+				This page allows you to install and manage extention on the system.
+			</p>
+			
+			<form action="" method="post">
+				<fieldset>
+					<div class="half">
+						<label for="search">
+							Search
+						</label>
+						<input
+							type="text"
+							id="search"
+							name="search"
+						value="" />
+					</div>
+					<div class="half">
+						<label for="submit">
+							&nbsp;
+						</label>
+						<input
+							type="submit"
+							id="submit"
+							class="button"
+						value="Search" />
+				</fieldset>
+			</form>
+			
+			<table summary="This table contains a list of installed extentions">
+				<thead>
+					<tr>
+						<th>
+							Name
+						</th>
+						<th>
+							Version
+						</th>
+						<th>
+							Description
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% for (int i = 0; i < 100; i++) { %>
+					<tr>
+						<td>
+							<a href="">
+								Blog Entries
+							</a>
+						</td>
+						<td>
+							<abbr title="Version">v</abbr>1.0
+						</td>
+						<td>
+							Release and download of version one point zero.
+						</td>
+					</tr>
+					<% } %>
+				</tbody>
+			</table>
+		</div>
 		
-		<form action="" method="post">
-			<fieldset>
-				<div class="half">
-					<label for="search">
-						Search
-					</label>
-					<input
-						type="text"
-						id="search"
-						name="search"
-					value="" />
-				</div>
-				<div class="half">
-					<label for="submit">
-						&nbsp;
-					</label>
-					<input
-						type="submit"
-						id="submit"
-						class="button"
-					value="Search" />
-			</fieldset>
-		</form>
-		
-		<table summary="This table contains a list of installed extentions">
-			<thead>
-				<tr>
-					<td>
-						Name, Version
-					</td>
-				</tr>
-			</thead>
-			<tbody>
-				<% for (int i = 0; i < 10; i++) { %>
-				<tr>
-					<td>
-						<a href="">
-							Blog Entries
-						</a>
-						<abbr title="Version">v</abbr>1.0
-					</td>
-				</tr>
-				<% } %>
-			</tbody>
-		</table>
 	</div>
 	
 	<div id="services">
