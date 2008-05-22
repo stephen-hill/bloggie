@@ -1,21 +1,26 @@
 /****** Base Elements ******/
 
 html {
-	background-color: #333A40;
+	background-color: #30383e;
 	font-family: "trebuchet MS",sans-serif;
 	font-size: 1em;
-	text-align: justify;
+	height: 100%;
 	letter-spacing: 0.2pt;
-	word-spacing: -1pt;
 	line-height: 1.6
+	text-align: justify;
+	word-spacing: -1pt
+}
+
+body {
+	height: 100%
 }
 
 a {
-	color: #9CB4C1
+	color: #618aab
 }
 
 a:hover {
-	color: #fff
+	color: #006699
 }
 
 a img {
@@ -25,7 +30,7 @@ a img {
 /****** Title or Header ******/
 
 #title {
-	background-color: #242B31;
+	background-color: #22282d;
 	padding: 0.5em;
 	text-align: right
 }
@@ -53,10 +58,11 @@ a img {
 #mainmenu {
 	font-size: 0.8em;
 	font-weight: bold;
-	margin-top: 0.5em
+	margin-top: 1em
 }
 
 #mainmenu ul {
+	border-bottom: #9ca9b2 solid 0.5em;
 	float: left;
 	list-style: none;
 	margin: 0;
@@ -69,14 +75,95 @@ a img {
 }
 
 #mainmenu ul li a {
-	background-color: #292E33;
+	background-color: #353d42;
+	color: #79858d;
 	display: block;
-	margin: 0.2em;
+	margin-right: 0.5em;
 	padding: 0.4em 0.8em 0.4em 0.8em;
 	text-decoration: none
 }
 
 #mainmenu ul li a:hover {
-	background-color: #98A6B2;
-	color: #000
+	background-color: #9ca9b2;
+	color: #22282d
+}
+
+/****** Work Area ******/
+
+#workarea {
+	clear: left;
+	height: 100%
+}
+
+/****** Sub Menu ******/
+
+#submenu {
+	background-color: #e1e7eb;
+	float: left;
+	padding-top: 1em;
+	text-align: right;
+	width: 20%
+}
+
+#submenu h2 {
+	color: #9ca9b2;
+	font-size: 150%;
+	margin: 0;
+	padding-right: 1em
+	
+}
+
+#submenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+
+#submenu ul li a {
+	color: #618aab;
+	display: block;
+	margin: 0;
+	padding: 0.8em 1em 0.8em 0.8em;
+	text-decoration: none
+}
+
+#submenu ul li a:hover {
+	background-color: #fff
+}
+
+/****** Content ******/
+
+#content {
+	background-color: #fff;
+	color: #22282d;
+	margin-left: 20%;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+#content a:hover {
+	color: #006699;
+}
+
+#content h3 {
+	font-size: 150%;
+	margin: 0;
+	padding: 0
+}
+
+#content table {
+	width: 100%
+}
+
+#content th {
+	font-weight: bold;
+	text-align: left
+}
+
+/****** Services aka Footer ******/
+
+#services {
+	clear: both;
+	display: block
 }
