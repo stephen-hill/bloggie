@@ -47,3 +47,36 @@ a img {
 	display: inline;
 	padding-left: 1em
 }
+
+/****** Main Menu ******/
+
+#mainmenu {
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-top: 0.5em
+}
+
+#mainmenu ul {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+
+#mainmenu ul li {
+	float: left;
+}
+
+#mainmenu ul li a {
+	background-color: #292E33;
+	display: block;
+	margin: 0.2em;
+	padding: 0.4em 0.8em 0.4em 0.8em;
+	text-decoration: none
+}
+
+#mainmenu ul li a:hover {
+	background-color: #98A6B2;
+	color: #000
+}
