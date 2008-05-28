@@ -161,6 +161,131 @@ a img {
 	text-align: left
 }
 
+/****** Content Form ******/
+
+#content form {
+	margin: 0.5%;
+	margin-top: 0%;
+	width: auto;
+}
+
+#content form h4 {
+	border: #cccccc solid 1px;
+	font-weight: bold;
+	font-size: 100%;
+	margin-bottom: -1px;
+	padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+#content form fieldset {
+	border: none;
+	padding: 1%;
+	padding-top: 0%;
+	margin-bottom: 0.5%;
+	text-align: left;
+	background-transparent;
+}
+
+#content form fieldset div {
+	display: block;
+	float: left;
+	margin-bottom: 1%;
+	width: 100%;
+	/*opacity: 0.75;
+	filter: alpha(opacity=75);*/
+}
+
+#content form fieldset div label {
+	display: block;
+	font-size: 80%;
+	font-weight: bold;
+}
+
+#content form fieldset div.required label {
+	color: #ff0000;
+}
+
+#content form fieldset div.required label:after {
+	content: "*";
+}
+
+#content form fieldset div input,
+#content form fieldset div select,
+#content form fieldset div textarea {
+	width: 90%;
+}
+
+#content form fieldset div textarea {
+	height: 256px;
+	font-family: Courier New;
+	font-size: 75%;
+}
+
+#content form fieldset div textarea.short {
+	height: 64px;
+}
+
+#content form fieldset div.checkbox label {
+	display: block;
+	font-weight: normal;
+	margin-left: 2%;
+}
+
+#content form fieldset div.checkbox input {
+	float: left;
+	width: auto;
+}
+
+#content form fieldset div input.button {
+	border: none;
+	background: #ffeB86 url(/system/images/button-primary.gif);
+	background-position: top left;
+	width: 128px;
+	height: 22px;
+	font-size: 85%;
+	font-weight: bold;
+}
+
+#content form fieldset div input.button.cssHover {
+	background-position: top right;
+	color: #000000;
+}
+
+#content form fieldset div input.button.secondary {
+	background: #ffeB86 url(/system/images/button-secondary.gif) !important;
+	color: #808080;
+}
+
+#content form fieldset div input.button.secondary.cssHover {
+	background-position: top right !important;
+	color: #000000;
+}
+
+#content form fieldset div.full {
+	width: 100%;
+}
+
+#content form fieldset div.full textarea,
+#content form fieldset div.full select {
+	width: 95%;
+}
+
+#content form fieldset div.half {
+	width: 50%;
+}
+
+#content form fieldset div.third {
+	width: 33%;
+}
+
+#content form fieldset div.quarter {
+	width: 25%;
+}
+
+#content form fieldset div.fifth {
+	width: 20%;
+}
+
 /****** Services aka Footer ******/
 
 #services {
