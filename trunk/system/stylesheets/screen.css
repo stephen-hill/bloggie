@@ -152,13 +152,28 @@ a img {
 	padding: 0
 }
 
+/****** Content Tables ******/
+
 #content table {
 	width: 100%
 }
 
+#content tr.odd {
+	background-color: #e1e7eb
+}
+
+#content tr.hover {
+	background-color: #ffeB86
+}
+
 #content th {
 	font-weight: bold;
+	padding: 0.5em;
 	text-align: left
+}
+
+#content td {
+	padding: 0.5em
 }
 
 /****** Content Form ******/

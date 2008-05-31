@@ -147,7 +147,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<% for (int i = 0; i < 100; i++) { %>
+					<% for (int i = 0; i < 10; i++) { %>
 					<tr>
 						<td>
 							<a href="">
@@ -191,5 +191,7 @@
 		</ul>
 	</div>
 
+	<script type="text/javascript" src="/system/javascripts/domassistant/DOMAssistantCompressed.js"></script>
+	<script type="text/javascript" src="/system/javascripts/javascript.js"></script>
 </body>
 </html>
