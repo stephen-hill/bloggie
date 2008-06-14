@@ -1,3 +1,4 @@
-  * Item
-    * Item
-      * Item
+= Backend Load Process =
+  * Declare and load Bloggie class
+  * Load Default Settings
+  * Load User Settings
