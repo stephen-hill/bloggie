@@ -1,7 +1,8 @@
+#labels Phase-Implementation
 = Constructors =
 
 || *Visibility* || *Constructor* || *Parameters* ||
-|| Public || BloggieClass || () ||
+|| Public || !BloggieClass || () ||
 
 = Fields =
 
@@ -11,11 +12,11 @@
 = Properties =
 
 || *Visibility* || *Type* || *Name* || *Accessibility* ||
-|| Public || Double || Version || [Get] ||
+|| Public || Double || Version || ![Get] ||
 
 = Methods =
 
 || *Visibility* || *Return* || *Name* || *Parameters* ||
-|| Public || void || ApendBody || (string sInput) ||
-|| Public || void || ApendStylesheet || (string sInput) ||
-|| Public || void || ApendJavascript || (string sInput) ||
+|| Public || void || !ApendBody || (string sInput) ||
+|| Public || void || !ApendStylesheet || (string sPath, string sMedia) ||
+|| Public || void || !ApendJavascript || (string sInput) ||
