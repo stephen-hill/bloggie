@@ -6,6 +6,7 @@
 = Fields =
 
 || *Visibility* || *Type* || *Name* ||
+|| Public Constant || Double || _Version ||
 
 = Properties =
 
@@ -16,3 +17,5 @@
 
 || *Visibility* || *Return* || *Name* || *Parameters* ||
 || Public || void || ApendBody || (string sInput) ||
+|| Public || void || ApendStylesheet || (string sInput) ||
+|| Public || void || ApendJavascript || (string sInput) ||
