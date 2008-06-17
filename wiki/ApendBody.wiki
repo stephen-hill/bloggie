@@ -1,0 +1,1 @@
+This function appends data to the <body> tag of the final browser output.
