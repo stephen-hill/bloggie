@@ -1,4 +1,7 @@
 = Backend Load Process =
   * Declare and load Bloggie class
+  * Check Version and Install or Upgrade Database
   * Load Default Settings
   * Load User Settings
+  * Load Extentions
+  * Output to Browser
