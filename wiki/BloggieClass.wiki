@@ -1,0 +1,18 @@
+= Constructors =
+
+|| *Visibility* || *Constructor* || *Parameters* ||
+|| Public || BloggieClass || () ||
+
+= Fields =
+
+|| *Visibility* || *Type* || *Name* ||
+
+= Properties =
+
+|| *Visibility* || *Type* || *Name* || *Accessibility* ||
+|| Public || Double || Version || [Get] ||
+
+= Methods =
+
+|| *Visibility* || *Return* || *Name* || *Parameters* ||
+|| Public || void || ApendBody || (string sInput) ||
