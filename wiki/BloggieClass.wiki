@@ -17,6 +17,6 @@
 = Methods =
 
 || *Visibility* || *Return* || *Name* || *Parameters* ||
-|| Public || void || !ApendBody || (string sInput) ||
-|| Public || void || !ApendStylesheet || (string sPath, string sMedia) ||
-|| Public || void || !ApendJavascript || (string sInput) ||
+|| Public || void || ApendBody || (string sInput) ||
+|| Public || void || ApendStylesheet || (string sPath, string sMedia) ||
+|| Public || void || ApendJavascript || (string sInput) ||
