@@ -12,7 +12,7 @@
 = Properties =
 
 || *Visibility* || *Type* || *Name* || *Accessibility* ||
-|| Public || Double || Version || ![Get] ||
+|| Public || Double || Version || Get ||
 
 = Methods =
 
