@@ -55,13 +55,13 @@ a img {
 
 /****** Main Menu ******/
 
-#mainmenu {
+#extensions {
 	font-size: 0.8em;
 	font-weight: bold;
 	margin-top: 1em
 }
 
-#mainmenu ul {
+#extensions ul {
 	border-bottom: #9ca9b2 solid 0.5em;
 	float: left;
 	list-style: none;
@@ -70,11 +70,11 @@ a img {
 	width: 100%
 }
 
-#mainmenu ul li {
+#extensions ul li {
 	float: left;
 }
 
-#mainmenu ul li a {
+#extensions ul li a {
 	background-color: #353d42;
 	color: #79858d;
 	display: block;
@@ -83,7 +83,11 @@ a img {
 	text-decoration: none
 }
 
-#mainmenu ul li a:hover {
+#extensions ul li a:hover {
+	color: #fff
+}
+
+#extensions ul li a.current {
 	background-color: #9ca9b2;
 	color: #22282d
 }
