@@ -1,3 +1,6 @@
+<%@ Import Namespace="System.IO" %>
+<%@ Import Namespace="System.Data" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
 <script runat="server">
 
 public class BloggieClass
@@ -5,7 +8,7 @@ public class BloggieClass
 
     public BloggieClass()
     {
-
+    	
     }
 
 	// The current version of the software
@@ -16,45 +19,107 @@ public class BloggieClass
 		}
 	}
 	
-	// Html Namespace
-	public const string _DocType = "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">";
-	public string DocType {
+	// Database Connection
+	private SqlConnection _Connection = new SqlConnection();
+	public SqlConnection Connection {
 		get {
-			return _DocType;
+			return _Connection;
 		}
 		set {
-			DocType = value;
+			_Connection = value;
 		}
 	}
 	
+	// Page Title
+	private String _PageTitle = "Bloggie";
+	public String PageTitle {
+		get {
+			return _PageTitle;
+		}
+		set {
+			_PageTitle = value;
+		}
+	}
 	
-	// Output strings that will be sent to the browser
-	private StringBuilder _Body = new StringBuilder();
-	private StringBuilder _Stylesheet = new StringBuilder();
-	private StringBuilder _Javascript = new StringBuilder();
+	// Datatable Function
+	public DataTable tDataTable(string StrSql) {
+		SqlDataAdapter oDataAdapter = new SqlDataAdapter(StrSql, _Connection);
+		DataTable oDataTable = new DataTable();
+		oDataTable.Constraints.Clear();
+		oDataAdapter.Fill(oDataTable);
+		return oDataTable;
+	}
 	
-
-    public void ApendBody(string sInput) {
-        _Body.Append(sInput);
+	// Javascript and Stylesheet Control
+	private StringBuilder _Stylesheets = new StringBuilder();
+	private StringBuilder _Javascripts = new StringBuilder();
+	
+    public void AddStylesheet(string Path, string Media) {
+        _Stylesheets.Append("<link rel=\"stylesheet\" type=\"text/css\" media=\"" + Media + "\" href=\"" + Path + "\" />\n");
     }
     
-    public void ApendStylesheet(string sPath, string sMedia) {
-        _Stylesheet.Append("<link rel=\"stylesheet\" type=\"text/css\" media=\"" + sMedia + "\" href=\"/" + sPath + "\" />");
+	public String Stylesheets {
+		get {
+			return _Stylesheets.ToString();
+		}
+	}
+    
+    public void AddJavascript(string Path) {
+        _Javascripts.Append("<script type=\"text/javascript\"  src=" + Path + "><");
+        _Javascripts.Append("/script>\n");
     }
     
-    public void ApendJavascript(string sInput) {
-        _Javascript.Append(sInput);
-    }
-    
-    public string BrowserOutput() {
-    	StringBuilder sOutput = new StringBuilder();
-    	sOutput.Append(_DocType);
-    	sOutput.Append(_Body);
-    	sOutput.Append(_Stylesheet);
-    	sOutput.Append(_Javascript);
-    	
-    	return sOutput.ToString();
-    }
+	public String Javascripts {
+		get {
+			return _Javascripts.ToString();
+		}
+	}
+	
+	// Page Output
+	private StringWriter _ResponseContent = new StringWriter();
+	public StringWriter ResponseContent {
+		get {
+			return _ResponseContent;
+		}
+		set {
+			_ResponseContent.Write(value);
+		}
+	}
+	
+	// Requested Extension
+	private String _Extension = "Dashboard";
+	public String Extension {
+		get {
+			return _Extension;
+		}
+		set {
+			_Extension = value;
+			PageTitle = "Bloggie | " + Extension;
+		}
+	}
+	
+	// Requested Page
+	private String _Page = "Default";
+	public String Page {
+		get {
+			return _Page;
+		}
+		set {
+			_Page = value;
+			PageTitle = "Bloggie | " + Extension + " | " + Page;
+		}
+	}
+	
+	// Current User
+	private String _Username = "annonymous";
+	public String Username {
+		get {
+			return _Username;
+		}
+		set {
+			_Username = value;
+		}
+	}
 
 }
 
