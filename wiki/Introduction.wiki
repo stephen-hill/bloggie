@@ -1,2 +1,0 @@
-#labels Featured
-Bloggie is a simple content management system for creating blogs. The moto is Keep it simple stupid.
